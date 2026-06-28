@@ -841,21 +841,19 @@ export default function App() {
             <h2 className="text-3xl md:text-5xl font-black text-center uppercase tracking-tighter mb-4 glitch-header select-text">
               DIVYESH FOUND.
             </h2>
-{/* VOTE DIVYESH CHAOS FLOATING LAYER */}
-<div className="absolute inset-0 pointer-events-none overflow-hidden">
+            {/* VOTE DIVYESH FLOATING CHAOS */}
+<div className="absolute inset-0 pointer-events-none overflow-visible z-40">
 
   {[
     "🚀 VOTE DIVYESH",
     "IT HEAD 💻",
     "DIVYESH.EXE ONLINE",
-    "SYSTEM UPDATE READY",
     "⚡ SUPPORT DIVYESH",
     "CANDIDATE FOUND ✅",
     "MORE TECH MORE IDEAS",
     "INSTALL DIVYESH.EXE",
     "IT HEAD MODE ON",
     "CREATIVITY PATCH",
-    "STUDENT COUNCIL UPDATE",
     "MISSION: IT HEAD",
     "NO BORING SPEECHES 💀"
   ].map((text, i) => (
@@ -863,29 +861,29 @@ export default function App() {
     <motion.div
       key={i}
       animate={{
-        y: [0, -15, 0],
-        rotate: [-5, 5, -5]
+        y: [0, -20, 0],
+        rotate: [-6, 6, -6]
       }}
       transition={{
-        duration: 2 + i * 0.3,
+        duration: 2 + i * 0.2,
         repeat: Infinity
       }}
       className="
       absolute
       bg-black
       text-yellow-300
-      border-2
+      border-4
       border-black
       px-3
-      py-1
+      py-2
       font-mono
       font-black
       text-xs
       shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]
       "
       style={{
-        left: `${(i * 13) % 85}%`,
-        top: `${10 + ((i * 19) % 75)}%`
+        left: `${(i * 15) % 85}%`,
+        top: `${15 + ((i * 17) % 70)}%`
       }}
     >
       {text}
@@ -896,23 +894,22 @@ export default function App() {
 </div>
 
 
-{/* FINAL VOTE MESSAGE */}
+{/* BIG FINAL VOTE BOX */}
 <div className="
 relative
-z-20
+z-50
 bg-black
 text-white
 border-4
 border-black
-p-5
-mb-6
+p-6
+mt-8
 text-center
-shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]
+shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]
 ">
 
 <h1 className="
-text-4xl
-md:text-6xl
+text-5xl
 font-black
 text-yellow-300
 ">
@@ -920,9 +917,8 @@ text-yellow-300
 </h1>
 
 <h2 className="
-text-2xl
+text-3xl
 font-black
-mt-2
 ">
 FOR IT HEAD
 </h2>
@@ -936,17 +932,17 @@ More creativity. More innovation.
 mt-4
 bg-white
 text-black
-border-2
+border-4
 border-black
 p-3
-font-mono
 font-bold
+font-mono
 ">
-CANDIDATE: DIVYESH.EXE<br/>
-STATUS: READY ✅
+DIVYESH.EXE READY ✅
 </div>
 
 </div>
+
 </div>
             <div className="bg-white border-4 border-black p-4 mb-6 font-mono text-xs md:text-sm space-y-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
               <p className="font-bold uppercase text-pink-600">
