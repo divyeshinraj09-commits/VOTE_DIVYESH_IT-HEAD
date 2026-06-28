@@ -1,0 +1,6 @@
+{
+  "name": "Divyesh IT Head Campaign",
+  "description": "Interactive Neo-Brutalist campaign and dashboard for Divyesh Panwar, candidate for Student Council IT Head, featuring security alerts, custom configuration options, and an interactive sarcastic support console.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
