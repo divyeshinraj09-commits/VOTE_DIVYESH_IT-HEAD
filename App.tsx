@@ -842,6 +842,48 @@ export default function App() {
               DIVYESH FOUND.
             </h2>
 
+            {/* Floating Vote Campaign Chaos Layer */}
+<div className="absolute inset-0 pointer-events-none overflow-hidden">
+
+  {[
+    "🚀 VOTE DIVYESH",
+    "IT HEAD 2026 💻",
+    "DIVYESH.EXE ONLINE",
+    "SYSTEM UPDATE READY",
+    "⚡ SUPPORT DIVYESH",
+    "CANDIDATE FOUND ✅",
+    "NO BORING SPEECHES",
+    "MORE TECH MORE IDEAS",
+    "INSTALL DIVYESH.EXE",
+    "IT HEAD MODE: ON",
+    "STUDENT COUNCIL UPDATE",
+    "CREATIVITY PATCH INSTALLED",
+    "TECH SUPPORT ACTIVATED",
+    "MISSION: IT HEAD"
+  ].map((text, i) => (
+    <motion.div
+      key={i}
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        y: [0, -15, 0],
+        rotate: [i % 2 === 0 ? -5 : 5, 0, i % 2 === 0 ? 5 : -5]
+      }}
+      transition={{
+        duration: 3 + i,
+        repeat: Infinity
+      }}
+      className="absolute bg-black text-yellow-300 border-2 border-black px-3 py-1 font-mono font-black text-xs shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+      style={{
+        left: `${(i * 17) % 90}%`,
+        top: `${10 + ((i * 23) % 75)}%`
+      }}
+    >
+      {text}
+    </motion.div>
+  ))}
+
+</div>
             <div className="bg-white border-4 border-black p-4 mb-6 font-mono text-xs md:text-sm space-y-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
               <p className="font-bold uppercase text-pink-600">
                 [SYSTEM] Payload: DIVYESH.EXE successfully injected into Student Council candidate array.
