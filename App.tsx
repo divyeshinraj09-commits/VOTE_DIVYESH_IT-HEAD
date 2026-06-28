@@ -841,33 +841,17 @@ export default function App() {
             <h2 className="text-3xl md:text-5xl font-black text-center uppercase tracking-tighter mb-4 glitch-header select-text">
               DIVYESH FOUND.
             </h2>
-{/* VOTE DIVYESH FLOATING CHAOS */}
+{/* VOTE DIVYESH FINAL */}
 
-<div className="relative z-50 mb-8">
+<div className="relative z-20 mb-6">
 
-  <div className="
-  bg-black
-  text-white
-  border-4
-  border-black
-  p-6
-  text-center
-  shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]
-  ">
+  <div className="bg-black text-white border-4 border-black p-6 text-center shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
 
-    <h1 className="
-    text-5xl
-    font-black
-    text-yellow-300
-    animate-pulse
-    ">
+    <h1 className="text-5xl font-black text-yellow-300">
       🚀 VOTE DIVYESH 🚀
     </h1>
 
-    <h2 className="
-    text-3xl
-    font-black
-    ">
+    <h2 className="text-3xl font-black">
       FOR IT HEAD
     </h2>
 
@@ -881,65 +865,33 @@ export default function App() {
 </div>
 
 
-{/* FLOATING TEXTS */}
-
-<div className="fixed inset-0 pointer-events-none z-50 overflow-hidden">
+<div className="fixed inset-0 pointer-events-none z-[999]">
 
 {[
 "🚀 VOTE DIVYESH",
 "IT HEAD 💻",
-"DIVYESH.EXE ONLINE",
-"⚡ SUPPORT DIVYESH",
-"MISSION IT HEAD",
-"TECH UPDATE READY",
-"CREATIVITY MODE ON",
-"NO BORING SPEECHES 💀",
-"STUDENT CHOICE ✅",
-"INSTALL DIVYESH.EXE"
-].map((text,i)=>(
+"DIVYESH.EXE",
+"SUPPORT DIVYESH",
+"TECH UPDATE",
+"CREATIVITY ON",
+"STUDENT CHOICE",
+"MISSION IT HEAD"
+].map((x,i)=>(
 
-<motion.div
-
+<div
 key={i}
-
-animate={{
-y:[0,-30,0],
-rotate:[-8,8,-8]
-}}
-
-transition={{
-duration:2+i*0.2,
-repeat:Infinity
-}}
-
-className="
-absolute
-bg-black
-text-yellow-300
-border-4
-border-black
-px-3
-py-2
-font-black
-font-mono
-text-xs
-"
-
+className="absolute bg-black text-yellow-300 border-2 border-black px-3 py-2 font-black text-xs"
 style={{
-left:`${5+(i*9)%85}%`,
-top:`${10+(i*8)%75}%`
+left:`${5+i*12}%`,
+top:`${10+i*8}%`
 }}
-
 >
-
-{text}
-
-</motion.div>
+{x}
+</div>
 
 ))}
 
 </div>
-
 </div>
             <div className="bg-white border-4 border-black p-4 mb-6 font-mono text-xs md:text-sm space-y-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
               <p className="font-bold uppercase text-pink-600">
