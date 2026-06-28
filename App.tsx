@@ -841,48 +841,112 @@ export default function App() {
             <h2 className="text-3xl md:text-5xl font-black text-center uppercase tracking-tighter mb-4 glitch-header select-text">
               DIVYESH FOUND.
             </h2>
-
-            {/* Floating Vote Campaign Chaos Layer */}
+{/* VOTE DIVYESH CHAOS FLOATING LAYER */}
 <div className="absolute inset-0 pointer-events-none overflow-hidden">
 
   {[
     "🚀 VOTE DIVYESH",
-    "IT HEAD 2026 💻",
+    "IT HEAD 💻",
     "DIVYESH.EXE ONLINE",
     "SYSTEM UPDATE READY",
     "⚡ SUPPORT DIVYESH",
     "CANDIDATE FOUND ✅",
-    "NO BORING SPEECHES",
     "MORE TECH MORE IDEAS",
     "INSTALL DIVYESH.EXE",
-    "IT HEAD MODE: ON",
+    "IT HEAD MODE ON",
+    "CREATIVITY PATCH",
     "STUDENT COUNCIL UPDATE",
-    "CREATIVITY PATCH INSTALLED",
-    "TECH SUPPORT ACTIVATED",
-    "MISSION: IT HEAD"
+    "MISSION: IT HEAD",
+    "NO BORING SPEECHES 💀"
   ].map((text, i) => (
+
     <motion.div
       key={i}
-      initial={{ opacity: 0 }}
       animate={{
-        opacity: 1,
         y: [0, -15, 0],
-        rotate: [i % 2 === 0 ? -5 : 5, 0, i % 2 === 0 ? 5 : -5]
+        rotate: [-5, 5, -5]
       }}
       transition={{
-        duration: 3 + i,
+        duration: 2 + i * 0.3,
         repeat: Infinity
       }}
-      className="absolute bg-black text-yellow-300 border-2 border-black px-3 py-1 font-mono font-black text-xs shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+      className="
+      absolute
+      bg-black
+      text-yellow-300
+      border-2
+      border-black
+      px-3
+      py-1
+      font-mono
+      font-black
+      text-xs
+      shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]
+      "
       style={{
-        left: `${(i * 17) % 90}%`,
-        top: `${10 + ((i * 23) % 75)}%`
+        left: `${(i * 13) % 85}%`,
+        top: `${10 + ((i * 19) % 75)}%`
       }}
     >
       {text}
     </motion.div>
+
   ))}
 
+</div>
+
+
+{/* FINAL VOTE MESSAGE */}
+<div className="
+relative
+z-20
+bg-black
+text-white
+border-4
+border-black
+p-5
+mb-6
+text-center
+shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]
+">
+
+<h1 className="
+text-4xl
+md:text-6xl
+font-black
+text-yellow-300
+">
+🚀 VOTE DIVYESH 🚀
+</h1>
+
+<h2 className="
+text-2xl
+font-black
+mt-2
+">
+FOR IT HEAD
+</h2>
+
+<p className="font-mono mt-3">
+Less boring. More ideas.<br/>
+More creativity. More innovation.
+</p>
+
+<div className="
+mt-4
+bg-white
+text-black
+border-2
+border-black
+p-3
+font-mono
+font-bold
+">
+CANDIDATE: DIVYESH.EXE<br/>
+STATUS: READY ✅
+</div>
+
+</div>
 </div>
             <div className="bg-white border-4 border-black p-4 mb-6 font-mono text-xs md:text-sm space-y-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
               <p className="font-bold uppercase text-pink-600">
