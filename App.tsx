@@ -841,105 +841,102 @@ export default function App() {
             <h2 className="text-3xl md:text-5xl font-black text-center uppercase tracking-tighter mb-4 glitch-header select-text">
               DIVYESH FOUND.
             </h2>
-            {/* VOTE DIVYESH FLOATING CHAOS */}
-<div className="absolute inset-0 pointer-events-none overflow-visible z-40">
+{/* VOTE DIVYESH FLOATING CHAOS */}
 
-  {[
-    "🚀 VOTE DIVYESH",
-    "IT HEAD 💻",
-    "DIVYESH.EXE ONLINE",
-    "⚡ SUPPORT DIVYESH",
-    "CANDIDATE FOUND ✅",
-    "MORE TECH MORE IDEAS",
-    "INSTALL DIVYESH.EXE",
-    "IT HEAD MODE ON",
-    "CREATIVITY PATCH",
-    "MISSION: IT HEAD",
-    "NO BORING SPEECHES 💀"
-  ].map((text, i) => (
+<div className="relative z-50 mb-8">
 
-    <motion.div
-      key={i}
-      animate={{
-        y: [0, -20, 0],
-        rotate: [-6, 6, -6]
-      }}
-      transition={{
-        duration: 2 + i * 0.2,
-        repeat: Infinity
-      }}
-      className="
-      absolute
-      bg-black
-      text-yellow-300
-      border-4
-      border-black
-      px-3
-      py-2
-      font-mono
-      font-black
-      text-xs
-      shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]
-      "
-      style={{
-        left: `${(i * 15) % 85}%`,
-        top: `${15 + ((i * 17) % 70)}%`
-      }}
-    >
-      {text}
-    </motion.div>
+  <div className="
+  bg-black
+  text-white
+  border-4
+  border-black
+  p-6
+  text-center
+  shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]
+  ">
 
-  ))}
+    <h1 className="
+    text-5xl
+    font-black
+    text-yellow-300
+    animate-pulse
+    ">
+      🚀 VOTE DIVYESH 🚀
+    </h1>
+
+    <h2 className="
+    text-3xl
+    font-black
+    ">
+      FOR IT HEAD
+    </h2>
+
+    <p className="font-mono mt-3">
+      Less boring. More ideas.<br/>
+      More creativity. More innovation.
+    </p>
+
+  </div>
 
 </div>
 
 
-{/* BIG FINAL VOTE BOX */}
-<div className="
-relative
-z-50
+{/* FLOATING TEXTS */}
+
+<div className="fixed inset-0 pointer-events-none z-50 overflow-hidden">
+
+{[
+"🚀 VOTE DIVYESH",
+"IT HEAD 💻",
+"DIVYESH.EXE ONLINE",
+"⚡ SUPPORT DIVYESH",
+"MISSION IT HEAD",
+"TECH UPDATE READY",
+"CREATIVITY MODE ON",
+"NO BORING SPEECHES 💀",
+"STUDENT CHOICE ✅",
+"INSTALL DIVYESH.EXE"
+].map((text,i)=>(
+
+<motion.div
+
+key={i}
+
+animate={{
+y:[0,-30,0],
+rotate:[-8,8,-8]
+}}
+
+transition={{
+duration:2+i*0.2,
+repeat:Infinity
+}}
+
+className="
+absolute
 bg-black
-text-white
-border-4
-border-black
-p-6
-mt-8
-text-center
-shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]
-">
-
-<h1 className="
-text-5xl
-font-black
 text-yellow-300
-">
-🚀 VOTE DIVYESH 🚀
-</h1>
-
-<h2 className="
-text-3xl
-font-black
-">
-FOR IT HEAD
-</h2>
-
-<p className="font-mono mt-3">
-Less boring. More ideas.<br/>
-More creativity. More innovation.
-</p>
-
-<div className="
-mt-4
-bg-white
-text-black
 border-4
 border-black
-p-3
-font-bold
+px-3
+py-2
+font-black
 font-mono
-">
-DIVYESH.EXE READY ✅
-</div>
+text-xs
+"
+
+style={{
+left:`${5+(i*9)%85}%`,
+top:`${10+(i*8)%75}%`
+}}
+
+>
+
+{text}
+
+</motion.div>
+
+))}
 
 </div>
 
