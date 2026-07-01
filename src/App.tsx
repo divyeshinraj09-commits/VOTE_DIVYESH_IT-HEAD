@@ -315,10 +315,6 @@ export default function App() {
     }, 500);
   };
 
-  useEffect(() => {
-    spooferBottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [spoofedIPs]);
-
   // --- Final Trigger Payload (STATE_CHAOS) ---
   const [deployClickCount, setDeployClickCount] = useState<number>(0);
   const deployTimeoutRef = useRef<NodeJS.Timeout | null>(null);
