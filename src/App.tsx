@@ -835,7 +835,7 @@ export default function App() {
             </div>
 
             <h2 className="text-3xl md:text-5xl font-black text-center uppercase tracking-tighter mb-4 glitch-header select-text">
-              DIVYESH FOUND........VOTE DIVYESH FOR IT HEAD
+              DIVYESH FOUND..................VOTE DIVYESH FOR IT HEAD
             </h2>
 
             <div className="bg-white border-4 border-black p-4 mb-6 font-mono text-xs md:text-sm space-y-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
